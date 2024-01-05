@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+  data:
+    jpa.repositories.enabled: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Pruebas
+    username: postgres
+    password: admin
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
